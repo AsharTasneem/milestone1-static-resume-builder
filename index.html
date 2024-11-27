@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resume Builder</title>
+</head>
+<body>
+    <h1>Static Resume Builder</h1>
+    <form action="post">
+        <fieldset>
+            <legend> Personal Information </legend>
+            <label for="name">name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="fname">Father name</label>
+            <input type="text" id="fname" name="fname" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="phone">Phone number</label>
+            <input type="number" name="phone" id="phone" required>
+        </fieldset>
+        <fieldset>
+            <legend> Education and Experience </legend>
+            <label for="education">Education</label>
+            <textarea id="education" name="education" rows="5" cols="25"></textarea>
+            <br/>    
+            <label for="experience">Experience</label>
+            <textarea id="experience" name="experience" rows="5" cols="25"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills</label>
+            <textarea name="skills" id="skills" rows="5" cols="15"></textarea>
+        </fieldset>
+        <button type="submit">Generate Resume Below</button>
+    </form>
+</body>
+</html>
